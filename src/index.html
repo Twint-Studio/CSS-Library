@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../dist/css/style.css">
-    <title>Prince's CSS Library (P.C.L)</title>
+    <title>CSS Library</title>
 </head>
 <body>
 
-    <h1>Prince's CSS <span style="font-size:small;color:#ccc;">(with some JS)</span> Library <span style="color:#ccc;">(P.C.L)</span></h1>
+    <h1>CSS Library</h1>
 
     <h2>Buttons</h2>
 
@@ -166,21 +166,17 @@
 
     <h2>Modal</h2>
 
-    <div class="modal" id="modal1">
-        <div class="modal-content">
-            <span class="close-btn" data-modal="modal1">✕</span>
-            <h2>Hello! (1)</h2>
-            <p>Press ESC key or click on ✕ button to close</p>
-        </div>
-    </div>
+    <dialog class="modal" id="modal1">
+        <span class="close-btn" data-modal="modal1">✕</span>
+        <h2>Hello! (1)</h2>
+        <p>Press ESC key or click on ✕ button to close</p>
+    </dialog>
 
-    <div class="modal" id="modal2">
-        <div class="modal-content">
-            <span class="close-btn" data-modal="modal2">✕</span>
-            <h2>Hello! (2)</h2>
-            <p>Press ESC key or click on ✕ button to close</p>
-        </div>
-    </div>
+    <dialog class="modal" id="modal2">
+        <span class="close-btn" data-modal="modal2">✕</span>
+        <h2>Hello! (2)</h2>
+        <p>Press ESC key or click on ✕ button to close</p>
+    </dialog>
 
     <button class="button button-primary" data-modal="modal1">Open Modal 1</button>
     <button class="button button-secondary" data-modal="modal2">Open Modal 2</button>
